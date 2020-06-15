@@ -95,7 +95,7 @@ namespace SistemadeTaller
 
         private void btnbuscarau_Click(object sender, EventArgs e)
         {
-            string query = "Select Nombre, RFC, Domicilio, Teléfono, Correo from Clientes where nombre=?";
+            string query = "Select Placa, Marca, Modelo, Color from Autos where Placa=?";
             string Placa = txtplaca.Text;
             OleDbConnection con = new OleDbConnection("Provider=SQLNCLI11;Data Source=LAURA\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=Administracion");
             OleDbCommand cmd = new OleDbCommand(query, con);
